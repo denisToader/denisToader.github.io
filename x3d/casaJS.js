@@ -1,19 +1,21 @@
 function forward(){
 	//var speed = parseFloat(document.getElementById("viewpoint").getAttribute("fieldofview"))-0.1;
 	//document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;
-	var pos = document.getElementById("viewpoint").getAttribute("position");
+	/*var pos = document.getElementById("viewpoint").getAttribute("position");
 	var axes = pos.split(',');
 	var z = parseFloat(axes[2])-0.2;
-	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;
+	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;*/
+	zoom(-0.15); //zoom in
 }
 
 function backwards(){
 	//var speed = parseFloat(document.getElementById("viewpoint").getAttribute("fieldofview"))+0.1;
 	//document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;	
-	var pos = document.getElementById("viewpoint").getAttribute("position");
+	/*var pos = document.getElementById("viewpoint").getAttribute("position");
 	var axes = pos.split(',');
 	var z = parseFloat(axes[2])+0.2;
-	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;
+	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;*/
+	zoom(0.15); //zoom out
 }
 
 window.addEventListener("deviceorientation", on_device_orientation)

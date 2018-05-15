@@ -3,7 +3,7 @@ function forward(){
 	//document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;
 	var pos = document.getElementById("viewpoint").getAttribute("position");
 	var z = pos.split(',');
-	var speed = parseInt(z[2])-0.05;
+	var speed = parseFloat(z[2])-0.05;
 	document.getElementById("viewpoint").setAttribute("position", "0,2," + speed.toString()) ;
 }
 
@@ -12,7 +12,7 @@ function backwards(){
 	//document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;	
 	var pos = document.getElementById("viewpoint").getAttribute("position");
 	var z = pos.split(',');
-	var speed = parseInt(z[2])+0.05;
+	var speed = parseFloat(z[2])+0.05;
 	document.getElementById("viewpoint").setAttribute("position", "0,2," + speed.toString()) ;
 }
 

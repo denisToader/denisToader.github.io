@@ -9,3 +9,9 @@ function on_device_orientation(e)
 	
 	document.getElementById("viewpp").innerHTML = pos;
 }
+
+function forward() {
+	var viewpoint = document.getElementById("viewpoint");
+	var pos = viewpoint.getAttribute("orientation");
+	document.getElementById("viewpp").innerHTML = pos;
+}

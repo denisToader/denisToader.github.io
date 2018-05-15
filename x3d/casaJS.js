@@ -2,18 +2,18 @@ function forward(){
 	//var speed = parseFloat(document.getElementById("viewpoint").getAttribute("fieldofview"))-0.1;
 	//document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;
 	var pos = document.getElementById("viewpoint").getAttribute("position");
-	var z = pos.split(',');
-	var speed = parseFloat(z[2])-0.1;
-	document.getElementById("viewpoint").setAttribute("position", "0,2," + speed.toString()) ;
+	var axes = pos.split(',');
+	var z = parseFloat(axes[2])-0.2;
+	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + speed.toString()) ;
 }
 
 function backwards(){
 	//var speed = parseFloat(document.getElementById("viewpoint").getAttribute("fieldofview"))+0.1;
 	//document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;	
 	var pos = document.getElementById("viewpoint").getAttribute("position");
-	var z = pos.split(',');
-	var speed = parseFloat(z[2])+0.1;
-	document.getElementById("viewpoint").setAttribute("position", "0,2," + speed.toString()) ;
+	var axes = pos.split(',');
+	var z = parseFloat(axes[2])+0.2;
+	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + speed.toString()) ;
 }
 
 window.addEventListener("deviceorientation", on_device_orientation)

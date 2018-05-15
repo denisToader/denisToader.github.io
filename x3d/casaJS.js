@@ -6,6 +6,7 @@ function forward(){
 	var z = parseFloat(axes[2])-0.2;
 	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;*/
 	//zoom(-0.1); //zoom in
+	$(x3dElement).click();
 }
 
 function backwards(){

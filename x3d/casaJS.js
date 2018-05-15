@@ -26,3 +26,9 @@ function on_device_orientation(e)
 	var viewpoint = document.getElementById("viewpoint");
 	viewpoint.setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);
 }
+
+function zoom (delta) {
+	var x3d = document.getElementById("x3dElement");
+	var vpt = x3d.getElementsByTagName("viewpoint")[0];
+	vpt.fieldOfView = parseFloat(vpt.fieldOfView) + delta;
+}

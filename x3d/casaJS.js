@@ -8,8 +8,12 @@ function forward(){
 }
 
 function backwards(){
-	var speed = parseFloat(document.getElementById("viewpoint").getAttribute("fieldofview"))+0.1;
-	document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;
+	//var speed = parseFloat(document.getElementById("viewpoint").getAttribute("fieldofview"))+0.1;
+	//document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;	
+	var pos = document.getElementById("viewpoint").getAttribute("position");
+	var z = pos.split(',');
+	var speed = parseInt(z[2])+0.1;
+	document.getElementById("viewpoint").setAttribute("position", "0,2," + speed.toString()) ;
 }
 
 window.addEventListener("deviceorientation", on_device_orientation)

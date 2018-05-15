@@ -5,7 +5,7 @@ function forward(){
 	var axes = pos.split(',');
 	var z = parseFloat(axes[2])-0.2;
 	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;*/
-	zoom(-0.15); //zoom in
+	zoom(-0.1); //zoom in
 }
 
 function backwards(){
@@ -15,7 +15,7 @@ function backwards(){
 	var axes = pos.split(',');
 	var z = parseFloat(axes[2])+0.2;
 	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;*/
-	zoom(0.15); //zoom out
+	zoom(0.1); //zoom out
 }
 
 window.addEventListener("deviceorientation", on_device_orientation)

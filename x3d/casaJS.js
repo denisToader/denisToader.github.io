@@ -29,9 +29,9 @@ function on_device_orientation(e)
 }
 
 function load(){
-	$(function() {
-	    var e = $.Event('keypress');
-	    e.which = 87; // Character 'W'
-	    $('corp').trigger(e);
-	});	
+
+    var e = $.Event("keydown");
+    e.which = 87; // Character 'W'
+    $("corp").trigger(e);
+	
 }

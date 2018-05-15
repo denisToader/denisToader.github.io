@@ -32,6 +32,6 @@ function load(){
 	$(function() {
 	    var e = $.Event('keypress');
 	    e.which = 87; // Character 'W'
-	    $('item').trigger(e);
+	    $('corp').trigger(e);
 	});	
 }

@@ -32,6 +32,6 @@ function load(){
 
     var e = $.Event("keydown");
     e.which = 87; // Character 'W'
-    $("x3dElement").trigger(e);
+    $("x3dom-x3dElement-canvas").trigger(e);
 	
 }

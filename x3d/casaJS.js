@@ -1,10 +1,10 @@
 function forward(){
 	//var speed = parseFloat(document.getElementById("viewpoint").getAttribute("fieldofview"))-0.1;
 	//document.getElementById("viewpoint").setAttribute("fieldofview", speed.toString()) ;
-	var pos = document.getElementById("viewpoint").getAttribute("position");
+	/*var pos = document.getElementById("viewpoint").getAttribute("position");
 	var axes = pos.split(',');
 	var z = parseFloat(axes[2])-0.2;
-	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;
+	document.getElementById("viewpoint").setAttribute("position", axes[0] + "," + axes[1] + "," + z.toString()) ;*/
 	//zoom(-0.1); //zoom in
 }
 
@@ -27,8 +27,10 @@ function on_device_orientation(e)
 	viewpoint.setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);
 }
 
-function zoom (delta) {
-	var x3d = document.getElementById("x3dElement");
-	var vpt = x3d.getElementsByTagName("viewpoint")[0];
-	vpt.fieldOfView = parseFloat(vpt.fieldOfView) + delta;
+function load(){
+	$(function() {
+	    var e = $.Event('keypress');
+	    e.which = 87; // Character 'W'
+	    $('item').trigger(e);
+	});	
 }

@@ -15,7 +15,7 @@ function forward() {
 	var pos = viewpoint.getAttribute("orientation");
 	document.getElementById("viewpp").innerHTML = pos;*/
 	
-	var x3dElem  = document.getElementById('x3dElement);
+	var x3dElem  = document.getElementById('x3dElement');
 	var vMatInv  = x3dElem.runtime.viewMatrix().inverse();
 
 	var viewDir  = vMatInv.multMatrixVec(new x3dom.fields.SFVec3f(0.0, 0.0, -1.0));

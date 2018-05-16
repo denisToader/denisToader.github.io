@@ -11,7 +11,19 @@ function on_device_orientation(e)
 }
 
 function forward() {
-	var viewpoint = document.getElementById("viewpoint");
+	/*var viewpoint = document.getElementById("viewpoint");
 	var pos = viewpoint.getAttribute("orientation");
-	document.getElementById("viewpp").innerHTML = pos;
+	document.getElementById("viewpp").innerHTML = pos;*/
+	
+	var x3dElem  = document.getElementById('x3dElement);
+	var vMatInv  = x3dElem.runtime.viewMatrix().inverse();
+
+	var viewDir  = vMatInv.multMatrixVec(new x3dom.fields.SFVec3f(0.0, 0.0, -1.0));
+	var upVec    = vMatInv.multMatrixVec(new x3dom.fields.SFVec3f(0.0, 1.0,  0.0));
+	var rightVec = viewDir.cross(upVec);
+	
+	var viewpoint = document.getElementById("viewpoint");
+	var pos = viewpoint.getAttribute("position");
+	var posArray = pos.split(',');
+	viewpoint.setAttribute("position", parseFloat(posArray[0])-pos.x + "," + 2 + "," + parseFloat(posArray[2])-pos.z);
 }

@@ -22,8 +22,8 @@ function forward() {
 	var upVec    = vMatInv.multMatrixVec(new x3dom.fields.SFVec3f(0.0, 1.0,  0.0));
 	var rightVec = viewDir.cross(upVec);
 	
-	var viewpoint = document.getElementById("viewpoint");
+	/*var viewpoint = document.getElementById("viewpoint");
 	var pos = viewpoint.getAttribute("position");
-	var posArray = pos.split(',');
-	viewpoint.setAttribute("position", parseFloat(posArray[0])-pos.x + "," + 2 + "," + parseFloat(posArray[2])-pos.z);
+	var posArray = pos.split(',');*/
+	viewpoint.setAttribute("position", parseFloat(viewDir.x) - 0.15 + "," + 2 + "," + parseFloat(viewDir.z)-0.15);
 }

@@ -25,5 +25,5 @@ function forward() {
 	/*var viewpoint = document.getElementById("viewpoint");
 	var pos = viewpoint.getAttribute("position");
 	var posArray = pos.split(',');*/
-	viewpoint.setAttribute("position", parseFloat(viewDir.x) - 0.15 + "," + 2 + "," + parseFloat(viewDir.z)-0.15);
+	viewpoint.setAttribute("position", parseFloat(rightVec.x) - 0.15 + "," + 2 + "," + parseFloat(rightVec.z)-0.15);
 }

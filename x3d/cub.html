@@ -2,30 +2,347 @@
 
 <html>
 <head>
-	<script type='text/javascript' src='https://www.X3dom.org/download/X3dom.js'> </script> 
-    <link rel='stylesheet' type='text/css' href='https://www.X3dom.org/download/X3dom.css'></link> 
+	<script type='text/javascript' src='http://www.x3dom.org/download/x3dom.js'> </script> 
+            <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/download/x3dom.css'></link> 
 </head>
 
 <body>
 
-<p>Ui version number: 2018.03.09.2</p>
 
 <X3D width="600" height="400">
 
 <Scene>
 
-<Transform scale="1 1 1">
-<Shape>
-<Appearance>
-	<Material diffuseColor="1,0,0" >
-		
-	</Material>
-</Appearance>
-<Box>
-</Box>
-</Shape>
+<viewpoint position="10,14,17" orientation="1,0,0,-0.7">
+</viewpoint>
+
+<!-- Perete lateral stanga -->
+<Transform scale="0.01,1,7">
+	<Shape>
+		<Appearance>
+			<Material diffuseColor="0.878, 1, 1" ></Material>
+		</Appearance>
+		<Box></Box>
+	</Shape>
 </Transform>
 
+<!-- Perete lateral spate-->
+<Transform translation='10,0,-7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,10">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!-- Perete lateral dreapta-->
+<Transform translation='20,0,0'>
+	<Transform scale="0.01,1,7">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.878, 1, 1" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Perete lateral fata-colt-drepta-->
+<Transform translation='19,0,7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,1">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+<!--geam-cam mica-->
+	<!-- sus -->
+	<Transform translation='16.5,0.8,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,0.2,1.5">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- jos -->
+	<Transform translation='16.5,-0.7,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,0.3,1.5">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+<!--mijloc-->
+<Transform translation='12,0,7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,3">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+<!--geam-bucatarie-->
+	<!-- sus -->
+	<Transform translation='8,0.8,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,0.2,1">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+	<!-- jos-->
+	<Transform translation='8,-0.7,7'>
+		<Transform rotation='0,1,0,1.5708'> 
+			<Transform scale="0.01,0.3,1">
+				<Shape>
+					<Appearance>
+						<Material diffuseColor="0.878, 1, 1" ></Material>
+					</Appearance>
+					<Box></Box>
+				</Shape>
+			</Transform>
+		</Transform>
+	</Transform>
+<!-- langa usa-->
+<Transform translation='5,0,7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+
+<!-- Perete lateral fata-colt-stanga-->
+<Transform translation='0.7,0,7'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,0.7">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.878, 1, 1" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Podea -->
+<Transform translation='10,-1,0'>
+	<Transform rotation='0,0,1,1.5708'> 
+		<Transform scale="0.01,10,7">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="0.902, 0.902, 0.980" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!-- Perete interior intrare colt-->
+<Transform translation='5,0,6'>
+	<Transform scale="0.01,1,1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+<!-- Perete interior intrare usa-->
+<Transform translation='5,0,3'>
+	<Transform scale="0.01,1,1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!--Perete hol-buc-cam mica-->
+<Transform translation='9.5,0,2'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,4.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Perete baie-cam mica-->
+<Transform translation='17.5,0,3'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!-- Perete ldespartitor cam mica->buc -->
+<Transform translation='14,0,4.5'>
+	<Transform scale="0.01,1,2.5">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+	
+<!--Perete hol-sufr-->
+<Transform translation='7,0,-1'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Perete hol-sufr->colt-->
+<Transform translation='2,0,-1'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Perete hol-cam mijloc->dorm -->
+<Transform translation='12,0,-1'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!--Perete dorm-baie -->
+<Transform translation='17.5,0,-1'>
+	<Transform rotation='0,1,0,1.5708'> 
+		<Transform scale="0.01,1,2.5">
+			<Shape>
+				<Appearance>
+					<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+				</Appearance>
+				<Box></Box>
+			</Shape>
+		</Transform>
+	</Transform>
+</Transform>
+
+<!-- Perete intrare baie->cam mica-->
+<Transform translation='15,0,2'>
+	<Transform scale="0.01,1,1">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Perete intrare baie->dorm -->
+<Transform translation='15,0,-0.5'>
+	<Transform scale="0.01,1,0.5">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="1.000, 0.973, 0.863" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Perete dorm->cam mijloc-->
+<Transform translation='13,0,-4'>
+	<Transform scale="0.01,1,3">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.878, 1, 1" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+<!-- Perete cam mijloc->sufr-->
+<Transform translation='7,0,-4'>
+	<Transform scale="0.01,1,3">
+		<Shape>
+			<Appearance>
+				<Material diffuseColor="0.878, 1, 1" ></Material>
+			</Appearance>
+			<Box></Box>
+		</Shape>
+	</Transform>
+</Transform>
+
+	
 </Scene>
 
 </X3D>

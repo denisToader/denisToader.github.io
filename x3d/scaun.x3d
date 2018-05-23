@@ -17,7 +17,7 @@
 <Transform scale="0.5,0.05,0.5">
 	<Shape>
 		<Appearance>
-			<Material diffuseColor="0.545, 0.000, 0.545" ></Material>
+			<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
 		</Appearance>
 		<Box></Box>
 	</Shape>
@@ -29,7 +29,7 @@
 		<Transform scale="0.5,0.05,0.5">
 			<Shape>
 				<Appearance>
-					<Material diffuseColor="0.545, 0.000, 0.545" ></Material>
+					<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
 				</Appearance>
 				<Box></Box>
 			</Shape>
@@ -42,7 +42,7 @@
 	<Transform scale="0.06,0.4,0.06">
 		<Shape>
 			<Appearance>
-				<Material diffuseColor="0.545, 0.000, 0.545" ></Material>
+				<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
 			</Appearance>
 			<Cylinder></Cylinder>
 		</Shape>
@@ -54,7 +54,7 @@
 	<Transform scale="0.06,0.4,0.06">
 		<Shape>
 			<Appearance>
-				<Material diffuseColor="0.545, 0.000, 0.545" ></Material>
+				<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
 			</Appearance>
 			<Cylinder></Cylinder>
 		</Shape>
@@ -66,7 +66,7 @@
 	<Transform scale="0.06,0.4,0.06">
 		<Shape>
 			<Appearance>
-				<Material diffuseColor="0.545, 0.000, 0.545" ></Material>
+				<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
 			</Appearance>
 			<Cylinder></Cylinder>
 		</Shape>
@@ -78,7 +78,7 @@
 	<Transform scale="0.06,0.4,0.06">
 		<Shape>
 			<Appearance>
-				<Material diffuseColor="0.545, 0.000, 0.545" ></Material>
+				<Material diffuseColor="0.600, 0.196, 0.800" ></Material>
 			</Appearance>
 			<Cylinder></Cylinder>
 		</Shape>

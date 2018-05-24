@@ -9,15 +9,19 @@
 <body>
 
 
-<X3D width="1920" height="1080">
+<X3D width="1080" height="720">
 
 <Scene>
 
 <viewpoint class="viewpoint" id="front" position="10,14,17" orientation="1,0,0,-0.7"></viewpoint> 
 <viewpoint class="viewpoint" id="intrare" position="5,0.5,15" ></viewpoint> 
 <viewpoint class="viewpoint" id="bucatarie" position="11.5,0.5,5.5" ></viewpoint> 
-<viewpoint class="viewpoint" id="cam_mica" position="17,0.5,6.3" ></viewpoint> 
-<viewpoint class="viewpoint" id="baie" position="17,0.5,3.9" ></viewpoint>
+<viewpoint class="viewpoint" id="cam_mica" position="17,0.4,6.3" ></viewpoint> 
+<viewpoint class="viewpoint" id="baie" position="17,0.4,3.9" ></viewpoint>
+<viewpoint class="viewpoint" id="dormitor" position="17,0.4,-1" ></viewpoint>
+<viewpoint class="viewpoint" id="cam_mij" position="13,0.4,3.9" ></viewpoint>
+<viewpoint class="viewpoint" id="sufr" position="7,0.4,3.9" ></viewpoint>
+
 
 <!-- Perete lateral stanga -->
 <Transform scale="0.01,1,7">
@@ -763,6 +767,11 @@
 <button onclick="document.getElementById('intrare').setAttribute('set_bind','true');">Intrare </button>
 <button onclick="document.getElementById('bucatarie').setAttribute('set_bind','true');">Bucatarie</button>
 <button onclick="document.getElementById('cam_mica').setAttribute('set_bind','true');">Cam mica </button>
+<button onclick="document.getElementById('baie').setAttribute('set_bind','true');">Baie </button>
+<button onclick="document.getElementById('dormitor').setAttribute('set_bind','true');">Dormitor </button>
+<button onclick="document.getElementById('cam_mij').setAttribute('set_bind','true');">Cam_mij </button>
+<button onclick="document.getElementById('sufr').setAttribute('set_bind','true');">Sufragerie</button>
+
 
 <script src="casaJS.js"></script>
 

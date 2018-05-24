@@ -10,7 +10,7 @@ function on_device_orientation(e)
 	
 	
 	var i;
-	for (i = 0; i < viewpoint.length; i++) {
+	for (i = 1; i < viewpoint.length; i++) {
 		/*var bind= viewpoint[i].getAttribute("set_bind");
 		if(bind == "true" || bind == true)*/
 			viewpoint[i].setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);

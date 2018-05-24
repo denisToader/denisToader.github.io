@@ -14,7 +14,7 @@ function on_device_orientation(e)
 		/*var bind= viewpoint[i].getAttribute("set_bind");
 		if(bind == "true" || bind == true)*/
 			viewpoint[i].setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);
-	}*
+	}
 	
 }
 

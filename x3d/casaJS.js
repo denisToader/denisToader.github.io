@@ -4,7 +4,7 @@ function on_device_orientation(e)
 {
 	//document.getElementBy("orientation_id").innerHTML = e.alpha.toFixed(1);/* + " " + e.beta.toFixed(1) + " " + e.gamma.toFixed(1);*/
 	//var pos = viewpoint.getAttribute("orientation");
-	var viewpoint = document.getElementsByClass("viewpoint");
+	var viewpoint = document.getElementsByClassName("viewpoint");
 	
 	
 	var i;

@@ -8,7 +8,7 @@ function on_device_orientation(e)
 	//var pos = viewpoint.getAttribute("orientation");
 	//var viewpoint = document.getElementsByClassName("viewpoint");
 	
-	var viewpoint = document.getElementsById(aidi);
+	var viewpoint = document.getElementById(aidi);
 	viewpoint.setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);
 	
 	/*var i;

@@ -18,11 +18,11 @@ function on_device_orientation(e)
 	var viewpoint = document.getElementsByClassName("front");
 	
 	switch(aidi) {
-		case "front": viewpoint.setAttribute("position","10,14,17"); break;
-		case "intrare": viewpoint.setAttribute("position","10,14,17"); break;
+		case "front": viewpoint.setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);
+						viewpoint.setAttribute("position","10,14,17"); break;
+		case "intrare": viewpoint.setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);
+						viewpoint.setAttribute("position","10,14,17"); break;
 	}
-	
-	viewpoint.setAttribute("orientation","0 1 0 " + e.alpha * Math.PI / 180);
 	
 }
 
